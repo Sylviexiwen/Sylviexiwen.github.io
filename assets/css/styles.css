@@ -1,0 +1,164 @@
+/* File: styles.css */
+
+
+/* Import Futura Light font */
+@font-face {
+    font-family: 'Futura Light';
+    src: url('../fonts/FuturaLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura Medium';
+    src: url('../fonts/FuturaMedium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Futura Light', Arial, sans-serif;
+    color: #3333;
+    background-color: #FFFFFF;
+  }
+  
+  /* Header Styles */
+  .site-header {
+    background: linear-gradient(
+      to right,
+      #fae2dd 0.0000%,
+      #fad5cd 50.0000%,
+      #f0b7a4 100.0000%
+    );
+    padding: 1.500rem;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 60%;
+    margin: 1% 16%;
+  }
+
+  .title-section h1 {
+    margin: 0;
+    font-size: 2.000rem;
+    color: #333333;
+    font-family: "Futura Medium", Arial, sans-serif;
+  }
+  
+  .subtitle {
+    margin-top: 0.2500rem;
+    font-size: 1.000rem;
+    color: #666666;
+  }
+  
+  /* Navigation Styles */
+  .main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .main-nav li {
+    margin-left: 1.250rem;
+  }
+  
+  .main-nav a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+  }
+  
+  /* Main Content Layout */
+  .content-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* ensures it’s responsive on smaller screens */
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 2.000rem;
+  }
+  
+  /* Left (Photo) */
+  .photo-area {
+    flex: 1;
+    min-width: 45%; /* so it doesn’t get too small */
+    margin-right: 2.000rem;
+  }
+  
+  .photo-area img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0.2500rem;
+  }
+  
+  /* Right (Text) */
+  .info-area {
+    flex: 2;
+  }
+  
+  .text-block {
+    margin-bottom: 2.000rem;
+    width: 25rem;
+    padding-left: 2.5rem;
+  }
+  
+  .text-block h2 {
+    color: #d35f37;
+    margin: 0 0 1.000rem 0;
+    font-size: 1.500rem;
+    font-family: "Futura Medium", Arial, sans-serif;
+  }
+  
+  .text-block p {
+    line-height: 1.600;
+    font-size: 1.000rem;
+    margin: 0;
+    color: black;
+  }
+
+/* Footer Styles */
+.site-footer {
+    background-color: #dddddd;
+}
+
+.footer-container {
+    max-width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.000rem;
+}
+
+.footer-left {
+    font-size: 1.000rem;
+    color: #333333;
+}
+
+.footer-right {
+    font-size: 1.000rem;
+    color: #2C65A7; /* LinkedIn-ish blue */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Resume Styles */
+.resume {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    min-height: 1200px;
+    margin: 0 auto;
+    padding: 2.000rem;
+}
