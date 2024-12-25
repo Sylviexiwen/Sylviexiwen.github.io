@@ -1,0 +1,25 @@
+<!-- File: index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ site.title }}</title>
+    <!-- Link to your external CSS file -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    {% include header.html %}
+    <!-- Header Section -->
+    <!-- Main Content -->
+    <main>
+        {{ content }}
+    </main>
+
+    {% include footer.html %}
+</body>
+
+
+</html>
